@@ -1,0 +1,173 @@
+
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    box-sizing: border-box;
+}
+
+
+/* title code from markdown */
+
+h1, h2, h3, h4 {
+    margin: 20px 0 10px;
+    padding: 0;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    cursor: text;
+    position: relative; }
+
+h1 {
+    color: #2b2741;
+    font-size: 34px; }
+  
+h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #cccccc;
+    color:#8febd5; }
+  
+h3 {
+    font-size: 18px; }
+  
+h4 {
+    font-size: 16px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+    margin: 15px 0; }
+
+li p.first {
+    display: inline-block; }
+    li {
+        margin: 0;
+    line-height: 2.5; }
+    ul, ol {
+        padding-left: 30px; }
+      
+    ul :first-child, ol :first-child {
+        margin-top: 0; }
+      
+
+/* end code from markdown */  
+
+.grid-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: 40px;
+    left: 50px;
+    right: 50px;
+    background-color: lightcoral;
+}
+
+/*  rmq: autre possibilité: grid-template-areas: "a b" "a b" "a b";
+    */
+
+.resume {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 13px 13px;
+    grid-template-areas:
+      "photo contact"
+      "skills work1"
+      "social education";
+  }
+
+.resume > section {
+    padding: 1em;
+    background-color: white;
+    
+  }
+
+/* Define grid area for each section */
+
+.photo {
+    grid-area : photo;
+  }
+
+.contact {
+    grid-area : contact;
+  }
+
+.skills {
+    grid-area : skills;
+}
+
+.work1 {
+    grid-area : work1;
+}
+
+.education {
+    grid-area : education;
+  }
+
+.social {
+    grid-area : social;
+}
+
+/* code from Markdown */
+blockquote {
+    border-left: 4px solid #dddddd;
+    padding: 0 15px;
+    color: #e7F7F4; }
+    blockquote > :first-child {
+      margin-top: 0; }
+    blockquote > :last-child {
+      margin-bottom: 0; 
+      line-height: 1.5; }
+
+/* end code from markdown */
+
+/* social media buttons */
+
+.fa {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    padding: 19px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+  }
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+    
+}
+
+.fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+
+.fa-dribbble {
+    background: #ea4c89;
+    color: white;
+}
+
+.fa-github {
+    background: black;
+    color: white;
+}
+
+
+footer{
+    background-color: lightblue;
+    height: 100px;
+    width: 100%;
+}

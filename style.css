@@ -6,63 +6,17 @@
     box-sizing: border-box;
 }
 
-
-/* title code from markdown */
-
-h1, h2, h3, h4 {
-    margin: 20px 0 10px;
-    padding: 0;
-    font-weight: bold;
-    -webkit-font-smoothing: antialiased;
-    cursor: text;
-    position: relative; }
-
-h1 {
-    color: #2b2741;
-    font-size: 34px; }
-  
-h2 {
-    font-size: 24px;
-    border-bottom: 1px solid #cccccc;
-    color:#8febd5; }
-  
-h3 {
-    font-size: 18px; }
-  
-h4 {
-    font-size: 16px; }
-
-p, blockquote, ul, ol, dl, li, table, pre {
-    margin: 15px 0; }
-
-li p.first {
-    display: inline-block; }
-    li {
-        margin: 0;
-    line-height: 2.5; }
-    ul, ol {
-        padding-left: 30px; }
-      
-    ul :first-child, ol :first-child {
-        margin-top: 0; }
-      
-
-/* end code from markdown */  
-
 .grid-container{
+    width: 70%;
     padding: 20px;
-    display: flex;
+    display: grid;
     flex-direction: row;
-    justify-content: space-evenly;
-    position: relative;
-    top: 40px;
-    left: 50px;
-    right: 50px;
     background-color: lightcoral;
+    margin: 0 auto;
+       
 }
 
-/*  rmq: autre possibilité: grid-template-areas: "a b" "a b" "a b";
-    */
+/*  rmq: autre possibilité: grid-template-areas: "a b" "a b" "a b"; */
 
 .resume {
     display: grid;
@@ -80,6 +34,14 @@ li p.first {
     background-color: white;
     
   }
+
+.photo img{
+    width: 90%;
+    padding: 20px;
+    margin: 35px;
+    box-shadow: 8px 8px 8px #888888;
+    
+}
 
 /* Define grid area for each section */
 
@@ -120,6 +82,49 @@ blockquote {
 
 /* end code from markdown */
 
+/* title code from markdown */
+
+h1, h2, h3, h4 {
+    margin: 20px 0 10px;
+    padding: 0;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    cursor: text;
+    position: relative; }
+
+h1 {
+    color: #2b2741;
+    font-size: 34px; }
+  
+h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #cccccc;
+    color:#8febd5; }
+  
+h3 {
+    font-size: 18px; }
+  
+h4 {
+    font-size: 16px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+    margin: 15px 0; 
+    font-size: 13px;}
+
+li p.first {
+    display: inline-block; }
+    li {
+        margin: 0;
+    line-height: 2.5; }
+    ul, ol {
+        padding-left: 30px; }
+      
+    ul :first-child, ol :first-child {
+        margin-top: 0; }
+      
+
+/* end code from markdown */  
+
 /* social media buttons */
 
 .fa {
@@ -147,6 +152,7 @@ blockquote {
 .fa-linkedin {
     background: #007bb5;
     color: white;
+    justify-content: center;
     
 }
 

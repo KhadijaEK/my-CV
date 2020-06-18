@@ -69,6 +69,15 @@
     grid-area : social;
 }
 
+/* icon intro */
+
+ i .fab{
+    color: black;
+    box-shadow: none;
+    display: inline-block;
+}
+
+
 /* code from Markdown */
 blockquote {
     border-left: 4px solid #dddddd;
@@ -110,17 +119,6 @@ h4 {
 p, blockquote, ul, ol, dl, li, table, pre {
     margin: 15px 0; 
     font-size: 13px;}
-
-li p.first {
-    display: inline-block; }
-    li {
-        margin: 0;
-    line-height: 2.5; }
-    ul, ol {
-        padding-left: 30px; }
-      
-    ul :first-child, ol :first-child {
-        margin-top: 0; }
       
 
 /* end code from markdown */  
@@ -144,6 +142,10 @@ li p.first {
     -webkit-border-radius:25px;
 }
 
+.fa-li{
+    color: black;
+    list-style-type: none;
+}
 
 .fa:hover {
     opacity: 0.7;
